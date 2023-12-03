@@ -32,13 +32,23 @@
     </div>
 
 
-    <div class="ToDoBlock">
+    <div class="ToDoBlockContainer">
         <h2>ToDo List</h2>
+        <div class="ToDoBlockList">
+        <div class="ToDoBlock"><span> 1. Встать утром</span> </div>
+        <div class="ToDoBlock"><span> 2. Поесть</span> </div>
+        <div class="ToDoBlock"><span> 3. Лечь спать</span> </div>     
+        </div>
+    <div class="ToDoBlockContainerBottom">
+        <input type="text" name="todo-text">
+        <button type="button" onclick="addNewTask(event)"> Add </button>
+    </div>
     </div>
 
     
 
 
     <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/ToDo.js"></script>
 </body>
 </html>
