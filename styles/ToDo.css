@@ -44,12 +44,23 @@
     height: 80px;
     padding: 5px 5px 5px 20px;
     display: flex;
+    flex-direction: row;
     align-self: center;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 20px;
     border-bottom: 1px solid var(--color-black);
 }
+.ToDoBlock button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+    color: blue;
+}
+
 .ToDoBlock:first-of-type{
     border-top: 1px solid var(--color-black);
 }

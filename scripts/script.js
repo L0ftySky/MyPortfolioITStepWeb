@@ -1,7 +1,7 @@
 let menuToggler = document.querySelector(".menuToggler");
 let menu = document.querySelector(".menu");
 
-if(menuToggler) {
+if(menuToggler){
     menuToggler.addEventListener("click", (e) => {
         if(menuToggler.classList.contains("pushed")) {
             menuToggler.classList.remove("pushed");
