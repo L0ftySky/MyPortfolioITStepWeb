@@ -4,7 +4,7 @@
     display: flex;
     align-self: center;
     flex-direction: row;
-    background-color: var(--color-white);
+    background-color: none;
     gap: 30px;
 }
 .project{
@@ -19,6 +19,8 @@
     align-items: flex-start;
     justify-content: center;
     padding: 10px;
+    background-color: var(--color-white);
+    
 }
 .project img{
     height: 300px;

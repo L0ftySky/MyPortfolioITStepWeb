@@ -55,11 +55,18 @@
     background: none;
     border: none;
     cursor: pointer;
+    width: 100%;
 }
+.ToDoBlock img{
+    width: 25px;
+}
+
+/*
 .checked{
     text-decoration: line-through;
     color: blue;
-}
+}*/
+
 
 .ToDoBlock:first-of-type{
     border-top: 1px solid var(--color-black);
@@ -98,7 +105,3 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-.ToDoBlock img{
-    width: 25px;
-}
-
