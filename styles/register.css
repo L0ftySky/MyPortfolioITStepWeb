@@ -1,0 +1,98 @@
+.reg-card-block{
+    width: 90%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-gray);
+    padding: 5px;
+    gap: 5px;
+}
+.registration-form{
+    width: 25%;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: var(--color-white);
+}
+.card-list{
+    width: 75%;
+    border: 1px solid black;
+    background-color: var(--color-white);
+}
+.reg-card-block h2{
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 0px;    
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group button{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+.form-group .form-control{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--color-black);
+    padding-left: 10px ;
+    padding-right: 10px ;
+}
+.form-group .form-control:focus{
+    outline: none;
+}
+.form-group textarea.form-control{
+    height: 60px;
+}
+.card-list{
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    padding: 15px 25px ;
+    gap: 5px;
+    -webkit-box-shadow: 2px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 4px 8px 5px rgba(34, 60, 80, 0.2);
+}
+.card img{
+    width: 75px;
+}
+.card .card-name{
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+}
+.card .card-age{
+    font-size: 13px;
+    font-family: 'Anton', sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2px;
+}
+.card button{
+    margin-top: 20px;
+    background-color: var(--color-black);
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: var(--color-white);
+    cursor: pointer;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio ITStep</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logoHead">
+             <a href="index.html">ITStep</a> 
+        </div>
+        <div class="menuButton">
+            <button class="menuToggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="menu" id="main-menu">
+        <div class="block register"><a href="registration.html"> <img src="images/profile-icon.png" alt="Регистрация">   </a></div>
+        <div class="block"> <a href="index.html">Главная</a></div>
+        <div class="block"> <a href="projects/projects.html">Проекты</a></div>
+        <div class="block"> <a href="#">Обо мне</a></div>
+        <div class="block"> <a href="#">Контакты</a></div>
+    </div>
+
+    <div class="reg-card-block">
+        <div class="registration-form">
+            <h2>Форма регистрации</h2>
+            <form action="" method="POST">
+
+                <!--<div class="form-group">
+                    <input type="checkbox" name="variant[]" value="1"> Вариант 1
+                    <input type="checkbox" name="variant[]" value="2"> Вариант 2
+                    <input type="checkbox" name="variant[]" value="3"> Вариант 3
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" name="variant[]" value="1"> Вариант 1
+                    <input type="radio" name="variant[]" value="2"> Вариант 2
+                    <input type="radio" name="variant[]" value="3"> Вариант 3
+                </div>-->
+
+                <div class="form-group">
+                    <label> Ф.И.О </label>
+                    <input type="text" class="form-control" name="fio"  required>
+                </div>
+               
+
+                <div class="form-group">
+                    <label> Дата рождения </label>
+                    <input type="date" class="form-control" name="birthday" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label> Пол </label>
+                    <select name="pol" class="form-control" required>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label> Номер телефона </label>
+                    <input type="text" class="form-control" name="phone" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label> Email </label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label> Github </label>
+                    <input type="url" class="form-control" name="github">
+                </div>
+
+
+                <div class="form-group">
+                    <label> Адрес </label>
+                    <textarea name="address" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="form-control" >Зарегистрировать</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="card-list">
+            <div class="card">
+                <img src="images/profile-icon2.png" alt="avatar">
+                <div class="card-name">Test Tostovich</div>
+                <div class="card-age">Возраст: 20 лет</div>
+                <button type="button">Инфо</button>
+            </div>
+            <div class="card">
+                <img src="images/profile-icon2.png" alt="avatar">
+                <div class="card-name">Test Tostovich</div>
+                <div class="card-age">Возраст: 20 лет</div>
+                <button type="button">Инфо</button>
+            </div>
+            <div class="card">
+                <img src="images/profile-icon2.png" alt="avatar">
+                <div class="card-name">Test Tostovich</div>
+                <div class="card-age">Возраст: 20 лет</div>
+                <button type="button">Инфо</button>
+            </div>
+            <div class="card">
+                <img src="images/profile-icon2.png" alt="avatar">
+                <div class="card-name">Test Tostovich</div>
+                <div class="card-age">Возраст: 20 лет</div>
+                <button type="button">Инфо</button>
+            </div>
+            <div class="card">
+                <img src="images/profile-icon2.png" alt="avatar">
+                <div class="card-name">Test Tostovich</div>
+                <div class="card-age">Возраст: 20 лет</div>
+                <button type="button">Инфо</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
