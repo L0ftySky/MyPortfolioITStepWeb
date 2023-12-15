@@ -35,7 +35,7 @@
     <div class="reg-card-block">
         <div class="registration-form">
             <h2>Форма регистрации</h2>
-            <form action="" method="POST">
+            <form action="" method="POST" onsubmit="return sendForm(event)">
 
                 <!--<div class="form-group">
                     <input type="checkbox" name="variant[]" value="1"> Вариант 1
@@ -52,6 +52,7 @@
                 <div class="form-group">
                     <label> Ф.И.О </label>
                     <input type="text" class="form-control" name="fio"  required>
+                    <div class="error" id="name-error"></div>
                 </div>
                
 
@@ -72,6 +73,7 @@
                 <div class="form-group">
                     <label> Номер телефона </label>
                     <input type="text" class="form-control" name="phone" required>
+                    <div class="error" id="phone-error"></div>
                 </div>
 
 
@@ -83,17 +85,18 @@
 
                 <div class="form-group">
                     <label> Github </label>
-                    <input type="url" class="form-control" name="github">
+                    <input type="url" class="form-control" name="github" required>
                 </div>
 
 
                 <div class="form-group">
                     <label> Адрес </label>
-                    <textarea name="address" class="form-control"></textarea>
+                    <textarea name="address" class="form-control" required></textarea>
+                    <div class="error" id="address-error"></div>
                 </div>
 
                 <div class="form-group">
-                    <button class="form-control" >Зарегистрировать</button>
+                    <button class="form-control" type="submit">Зарегистрировать</button>
                 </div>
             </form>
 
@@ -101,31 +104,31 @@
         <div class="card-list">
             <div class="card">
                 <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">Test Tostovich</div>
+                <div class="card-name">John Doe</div>
                 <div class="card-age">Возраст: 20 лет</div>
                 <button type="button">Инфо</button>
             </div>
             <div class="card">
                 <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">Test Tostovich</div>
+                <div class="card-name">John Doe</div>
                 <div class="card-age">Возраст: 20 лет</div>
                 <button type="button">Инфо</button>
             </div>
             <div class="card">
                 <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">Test Tostovich</div>
+                <div class="card-name">John Doe</div>
                 <div class="card-age">Возраст: 20 лет</div>
                 <button type="button">Инфо</button>
             </div>
             <div class="card">
                 <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">Test Tostovich</div>
+                <div class="card-name">John Doe</div>
                 <div class="card-age">Возраст: 20 лет</div>
                 <button type="button">Инфо</button>
             </div>
             <div class="card">
                 <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">Test Tostovich</div>
+                <div class="card-name">John Doe</div>
                 <div class="card-age">Возраст: 20 лет</div>
                 <button type="button">Инфо</button>
             </div>
@@ -133,5 +136,6 @@
     </div>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/sumbit.js"> </script>
 </body>
 </html>
