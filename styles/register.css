@@ -67,6 +67,7 @@
     justify-content: flex-start;
     gap: 35px;
     flex-wrap: wrap;
+    position: relative;
 }
 .card{
     display: flex;
@@ -80,6 +81,7 @@
     -webkit-box-shadow: 2px 4px 8px 5px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 2px 4px 8px 5px rgba(34, 60, 80, 0.2);
     box-shadow: 2px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
 }
 .card img{
     width: 75px;
@@ -103,4 +105,22 @@
     font-weight: bold;
     color: var(--color-white);
     cursor: pointer;
+}
+.trashbin{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    right: 10px;
+    bottom: 10px;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+.active{
+    background-color: var(--color-gray);
+    transition: all linear 0.30s;    
 }

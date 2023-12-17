@@ -86,6 +86,7 @@
                 <div class="form-group">
                     <label> Github </label>
                     <input type="url" class="form-control" name="github" required>
+                    <div class="error" id="gitLink-error"></div>
                 </div>
 
 
@@ -102,37 +103,20 @@
 
         </div>
         <div class="card-list">
-            <div class="card">
+            <div class="card" draggable="true" ondragstart="startDrag(event)" id="test-card">
                 <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">John Doe</div>
+                <div class="card-name">Джон Доу</div>
                 <div class="card-age">Возраст: 20 лет</div>
                 <button type="button">Инфо</button>
             </div>
-            <div class="card">
-                <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">John Doe</div>
-                <div class="card-age">Возраст: 20 лет</div>
-                <button type="button">Инфо</button>
-            </div>
-            <div class="card">
-                <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">John Doe</div>
-                <div class="card-age">Возраст: 20 лет</div>
-                <button type="button">Инфо</button>
-            </div>
-            <div class="card">
-                <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">John Doe</div>
-                <div class="card-age">Возраст: 20 лет</div>
-                <button type="button">Инфо</button>
-            </div>
-            <div class="card">
-                <img src="images/profile-icon2.png" alt="avatar">
-                <div class="card-name">John Doe</div>
-                <div class="card-age">Возраст: 20 лет</div>
-                <button type="button">Инфо</button>
+            <div class="trashbin" ondragenter="enterDrag(event)" ondragleave="leaveDrag(event)" ondrop="endDrag(event)">
+                <img src="images/icons8-recycle-bin-50.png" alt="trash bin">
+                <!-- <a target="_blank" href="https://icons8.com/icon/rdRR1tq1xIo1/trash-can">recycle bin</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
             </div>
         </div>
+        
+        
+        
     </div>
 
     <script src="scripts/script.js"></script>
