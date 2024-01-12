@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio ITStep</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="akardion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logoHead">
+             <a href="../../index.html">ITStep</a> 
+        </div>
+        <div class="menuButton">
+            <button class="menuToggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="menu" id="main-menu">
+        <div class="block register"><a href="../../registration.html"> <img src="../../images/profile-icon.png" alt="Регистрация">   </a></div>
+        <div class="block"> <a href="../../index.html">Главная</a></div>
+        <div class="block"> <a href="../../projects/projects.html">Проекты</a></div>
+        <div class="block"> <a href="#">Обо мне</a></div>
+        <div class="block"> <a href="#">Контакты</a></div>
+    </div>
+
+    <div class="akardionlist">
+        <div class="akardblock" id="firstBlock">
+            Блок1   <button class="openbutton" id="openbuttonfirst" onclick="openinfofirst()">-</button>
+        </div>
+        <div class="akardinsert ed" id="firstInsert">
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </div>
+        <div class="akardblock" id="secondBlock">
+            Блок2   <button class="openbutton" id="openbuttonsecond" onclick="openinfosecond()">+</button>
+        </div>
+        <div class="akardinsert" id="secondInsert">
+            Lorem ipsum dolor sit amet. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="akardblock" id="thirdBlock">
+            Блок3   <button class="openbutton" id="openbuttonthird" onclick="openinfothird()">+</button>
+        </div>
+        <div class="akardinsert" id="thirdInsert">
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quae. loremx.
+        </div>
+    </div>
+    
+
+    <script src="../../scripts/script.js"></script>
+    <script src="akardion.js"></script>
+</body>
+</html>
