@@ -28,8 +28,15 @@ let List = {
         
         this.items.forEach(function(item){
             let li = document.createElement("li");
-            li.innerText = item.text;
-            ul.prepend(li);
+            //li.innerText = item.text;
+            let a = document.createElement("a");
+
+            a.href=item.href;
+            a.innerText = item.text;
+
+            li.append(a);
+
+            ul.append(li);
         });
         
         
@@ -38,7 +45,13 @@ let List = {
     }
 };
 // let texts = [text = 'first', href = "https://youtube.com", 'second', 'third', 'fourth'];
-let texts = ['first', 'second', 'third', 'fourth'];
+let texts = [
+    //'first', 'second', 'third', 'fourth'
+    {text: "first", href: "https://mail.ru"},
+    {text: "second", href: "https://mail.ru"},
+    {text: "third", href: "https://mail.ru"},
+    {text: "fourth", href: "https://mail.ru"},
+];
 
 texts.forEach(function(text){   
     let item = {
@@ -53,8 +66,9 @@ texts.forEach(function(text){
             this.href = href;
         }
     }
-    item.setText(text);
-    
+    item.setText(text.text);
+    item.setHref(text.href);
+
     List.addItem(item);
 });
 
