@@ -137,7 +137,7 @@ function sendForm(event){
             <img src="images/profile-icon2.png" alt="avatar">
             <div class="card-name">${name}</div>
             <div class="card-age">Возраст: ${age} лет</div>
-            <button type="button">Инфо</button>
+            <button type="button" id = ${id}>Инфо</button>
             </div>
         `);
         /*
